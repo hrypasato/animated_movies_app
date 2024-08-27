@@ -30,9 +30,7 @@ class DetailScreen extends StatelessWidget {
               ),
               // Movie type and episode info
               MovieInfoAndRating(
-                movieName: movie.name,
-                movieTypeAndEpisode: movie.movieTypeAndEpisode,
-                movieRating: movie.rating,
+                movie: movie,
               ),
 
               // Movie plot widget
