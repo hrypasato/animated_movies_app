@@ -9,9 +9,10 @@ import 'package:flutter/material.dart';
 
 class DetailScreen extends StatelessWidget {
   final Movie movie;
-  const DetailScreen(
-      {super.key,
-      required this.movie,});
+  const DetailScreen({
+    super.key,
+    required this.movie,
+  });
   @override
   Widget build(BuildContext context) {
     final size = MediaQuery.sizeOf(context);

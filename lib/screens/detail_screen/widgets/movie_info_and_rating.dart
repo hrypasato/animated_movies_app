@@ -1,16 +1,13 @@
+import 'package:animated_movies_app/model/movies_model.dart';
 import 'package:flutter/material.dart';
 
 // Move info and star rating used in details screen
 class MovieInfoAndRating extends StatelessWidget {
-  final String movieName;
-  final String movieTypeAndEpisode;
-  final int movieRating;
-  
+  final Movie movie;
+
   const MovieInfoAndRating({
     super.key,
-    required this.movieName,
-    required this.movieTypeAndEpisode,
-    required this.movieRating,
+    required this.movie,
   });
 
   @override
@@ -21,7 +18,7 @@ class MovieInfoAndRating extends StatelessWidget {
       children: [
         // Movie name
         Text(
-          movieName,
+          movie.name,
           style: const TextStyle(
             fontSize: 24,
             fontWeight: FontWeight.w700,
@@ -32,7 +29,7 @@ class MovieInfoAndRating extends StatelessWidget {
         Padding(
           padding: const EdgeInsets.only(top: 8),
           child: Text(
-            movieTypeAndEpisode,
+            movie.movieTypeAndEpisode,
             style: const TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w600,
@@ -55,7 +52,7 @@ class MovieInfoAndRating extends StatelessWidget {
                   return Icon(
                     Icons.star,
                     size: 32,
-                    color: index < movieRating ? Colors.amber : Colors.grey,
+                    color: index < movie.rating ? Colors.amber : Colors.grey,
                   );
                 },
               ),
