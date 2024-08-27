@@ -8,7 +8,7 @@ class MagazineCoverImage extends StatelessWidget {
     this.height,
   });
 
-  final Movies movies;
+  final Movie movies;
   final double? height;
 
   @override

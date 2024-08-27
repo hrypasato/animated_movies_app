@@ -82,12 +82,7 @@ class HomeScreen extends StatelessWidget {
                         Navigator.of(context).push(
                           zoomNavigation(
                             DetailScreen(
-                              movieName: MoviesData.movies[index].name,
-                              movieTypeAndEpisode:
-                                  MoviesData.movies[index].movieTypeAndEpisode,
-                              plot: MoviesData.movies[index].plot,
-                              movieImage: MoviesData.movies[index].coverImage,
-                              rating: MoviesData.movies[index].rating,
+                              movie: MoviesData.movies[index],
                             ),
                           ),
                         );

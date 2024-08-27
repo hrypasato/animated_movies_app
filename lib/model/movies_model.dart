@@ -1,11 +1,11 @@
-class Movies {
+class Movie {
   final String id;
   final String name;
   final String movieTypeAndEpisode;
   final int rating;
   final String coverImage;
   final String plot;
-  Movies({
+  Movie({
     required this.id,
     required this.name,
     required this.movieTypeAndEpisode,
